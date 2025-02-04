@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Elementt Selector */
+        div{
+            background-color:blue;
+        }
+        /* id Selector */
+        #para{
+            color: cadetblue;
+            background-color: azure;
+        }
+        /* Class Selector */
+        .heading{
+            background-color: black;
+            color: aliceblue;
+        }
+        /* Child Selector */
+        p > i{
+            color: aliceblue;
+            background-color: black;
+        }
+        /* Descendant Selector */
+        div h6{
+            color: aquamarine;
+            background-color: brown;
+        }
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: cornflowerblue;
+        }
+        a:active{
+            background-color: white;
+        }
+        a:hover{
+            background-color: dimgray;
+        }
+        h1:first-child{
+            background-color: rgb(37, 35, 31);
+        }
+
+        div a{
+            background-color:white ;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="heading">CSS Selector</h1>
+    <div>I am a div</div>
+    <article>
+    <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit.< <i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, facilis.</i>Debitis doloremque aperiam eveniet consequuntur ratione obcaecati cum necessitatibus dolorem aspernatur ad?</p></article>
+
+    <div>
+        <p>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, distinctio.</h6>
+        </p>
+    </div>
+
+    <div><a href="https://www.google.com">Go to google</a></div>
+    <div><a href="https://www.flipkart.com">Go to Flipkart</a></div>
+<div><a href="https://www.amazon.in">Go to Amazon</a></div>
+    <h1>hey baby</h1>
+</body>
+</html>
