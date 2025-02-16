@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        .content{
+            color: aqua;
+            border: 4px solid rgb(73, 76, 76) !important;
+            display: inline-block;
+            padding: 40px;
+            margin: 25px;
+            width: 455px;
+        }
+        .box1{
+            /* display:none; */
+            /* visibility: hidden; */
+            display: inline-flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- here i am converting block level element into inline element. -->
+    <div class="content box1">
+        i am the boss.
+    </div>
+    <div class="content">i am another box.</div>
+    <span>hey i am inline element</span>
+</body>
+</html>
