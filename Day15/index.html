@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selector</title>
+    <style>
+        /* .box:first-child{
+            background-color: aquamarine;
+        }
+        .box::first-line{
+            color: yellow;
+        } */
+        .boxes *{
+            background-color: rgb(151, 221, 198);
+            border: 2px solid aqua;
+        }
+        /* grouping of selectors */
+        p, a, .box, [data-color="primary"]{
+            padding-top: 24px;
+        }
+        .box:nth-child(even){
+            background-color: bisque;
+        }
+        .box:nth-last-child(1){
+            background-color: rgb(221, 231, 73);
+        }
+        .boxes::before{
+            content: "hey i am content written using before property.";
+        }
+        .boxes::after{
+            content:"Hey Akash is a good boy.";
+            color:red;
+        }
+
+        ::selection{
+            color: antiquewhite;
+            background-color: black;
+        }
+        .box::first-letter{
+            color: peru;
+            font-size: 55px;
+        }
+        input::placeholder{
+            color: aqua;
+            font-weight: 700;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div  data-color="primary" class="box">Hey I am a Box.</div>
+        <div class="box">Hey I am a Box.</div>
+        <div class="box">Hey I am a Box.</div>
+
+    </div>
+    <input type="text" placeholder="enter your name">
+</body>
+</html>
