@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+    <style>
+      :root {
+        --color: rgb(255, 235, 17);
+        --seccolor: rgb(94, 155, 230);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        display: flex;
+        background-color: var(--seccolor);
+        width: 100vw;
+      }
+      ul li {
+        list-style: none;
+        padding: 20px;
+      }
+      ul li a {
+        text-decoration-line: none;
+        text-transform: capitalize;
+        font-weight: 500;
+        color: var(--color);
+        text-align: center;
+      }
+      .login{
+        margin-left: 999px;
+        display: flex;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">projects</a></li>
+        <li><a href="">contact</a></li>
+        <div class="login">
+          <li><a href="">Signup</a></li>
+          <li><a href="">login</a></li>
+        </div>
+      </ul>
+    </div>
+  </body>
+</html>
