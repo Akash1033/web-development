@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+        :root{
+            --primarycolor:rgb(250, 109, 233);
+            --textcolor:rgb(255, 255, 255);
+            --secondarycolor:rgb(70, 207, 70);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .nav{
+            background-color:var(--primarycolor);
+            position: sticky;
+            top:0;
+            left: 0;
+        }
+        ul{
+            list-style: none; 
+            padding: 24px;
+        }
+        ul li{
+            display: inline;
+        }
+        ul li a{
+            padding: 24px ;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-weight: bold;
+            color: var(--textcolor);
+        }
+        .bigbox{
+            margin: 10px auto;
+            border:2px solid green;
+            width: 95vw;
+            height: 444px;
+            background-color: var(--secondarycolor);
+            padding: 20px;
+            display: flex;
+
+        }
+        .bigbox .box1{
+            border: none;
+            background-color: rgb(255, 172, 113);
+            width: 344px;
+            height: 344px;
+            margin-top: 30px;
+            margin-left: 300px;
+            
+        }
+        .bigbox .box2{
+            border: none;
+            background-color: rgb(78, 164, 235);
+            width: 344px;
+            height: 344px;
+            margin-top: 30px;
+            margin-left: 200px;
+            
+            
+        }
+
+        .section{
+            border:2px solid white;
+            border-radius: 24px;
+            margin:24px auto;
+            height: 120px;
+            width:60vw;
+        }
+        .section p{
+            padding: 34px;
+            text-transform: capitalize;
+            color: var(--textcolor);
+            font-size: 36px;
+            text-align: center;
+        }
+        .bigbox .circle{
+            height: 35px;
+            width: 40px;
+            border: 2px solid orange;
+            border-radius: 25px;
+            background-color: orange;
+            position: fixed;
+            top: 500px;
+            left: 95vw;
+        }
+        .footer{
+            background-color: rgb(255, 255, 255);
+            height: 60px;
+            width: 100vw;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact</a></li>
+        </ul>
+    </div>
+    <div class="bigbox">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="section">
+       <p> welcome to this Sigma Web-Devlopment Express</p>
+
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>
