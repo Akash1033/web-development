@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+    .img1{
+        /* filter: brightness(108%) contrast(2.5); */
+        object-fit: contain;
+        height: 388px;
+        width: 420px;
+
+    }
+    .img2{
+        /* filter: invert(0.31); */
+        filter: opacity(0.6);
+        height: 388px;
+        width: 420px;
+        object-fit: cover;
+
+    }
+    .img3{
+        filter: grayscale(100%);
+        height: 388px;
+        width:420px ;
+        object-fit: cover;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk=" alt="">
+        <img class="img2" src="https://d3mbwbgtcl4x70.cloudfront.net/shahrukh_khan_house_361ecd082f.webp" alt="">
+        <img  class="img3" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202404/virat-kohli-073650424-1x1.jpg?VersionId=ikBbzxloGoQ3Sishzo20fBK.RgjKAH3_" alt="">
+    </div>
+</body>
+</html>
